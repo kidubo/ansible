@@ -11,6 +11,10 @@
   - include: tasks/zhs.yml
   - include: tasks/node.yml
   - include: tasks/docker.yml
+  - include: tasks/nginx.yml
+  - include: tasks/pm2.yml
+
+
 
 
 
