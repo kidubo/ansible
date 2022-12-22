@@ -8,10 +8,10 @@
     - node
     - zsh
   tasks:
-  - include: tasks/zhs.yml
-  - include: tasks/node.yml
-  - include: tasks/nginx.yml
-  - include: tasks/pm2.yml
+  - import_tasks: tasks/zhs.yml
+  - import_tasks: tasks/node.yml
+  - import_tasks: tasks/nginx.yml
+  - import_tasks: tasks/pm2.yml
 
 
 
