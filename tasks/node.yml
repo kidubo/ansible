@@ -1,15 +1,18 @@
-  - name: install node
-    apt:
-        name: ['nodejs', 'npm']
-    tags:
-    - node
-  - name: Install n
-    npm: 
-      name: n
-      global: true
-    tags:
-    - node
-  - name: n 16.16.0
-    shell: n 16.16.0
-    tags:
-    - node
+---
+- name: Install node and npm
+  apt:
+    name: ['nodejs', 'npm']
+  tags:
+  - node
+
+- name: Install the n package globally
+  npm:
+    name: n
+    global: true
+  tags:
+  - node
+
+- name: Install node version 16.16.0
+  shell: n 16.16.0
+  tags:
+  - node
