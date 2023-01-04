@@ -1,4 +1,6 @@
 ---
+- import_module: apt
+
 - name: Install node and npm
   apt:
     name: ['nodejs', 'npm']
