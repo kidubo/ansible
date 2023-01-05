@@ -4,11 +4,19 @@
     - zsh
   - name: Change shell
     shell: chsh -s `which zsh`
+    tags:
+    - zsh
   - name: Install ohmyzsh (please don't tell people i use this)
     shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+    tags:
+    - zsh
   - name: Install the zsh plugin autosuggestions
     ansible.builtin.git:
       repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
       dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
+    tags:
+    - zsh
   - name: Update our zshrc
     shell: sed -i 's/(git/(git zsh-autosuggestions' ~/.zshrc
+    tags:
+    - zsh
