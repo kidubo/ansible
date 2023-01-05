@@ -1,4 +1,4 @@
 - name: install nginx
   apt: name=nginx
   tags:
-  - pm2
+  - nginx
