@@ -1,4 +1,4 @@
-# ansible
+# Ansible
 
 First You'll need to install Ansible here are the steps
 
@@ -17,3 +17,7 @@ First You'll need to install Ansible here are the steps
  ```
 
  `ansible-playbook -t node name.yml`  This is installing by tags
+ 
+ You may need to copy the .ssh folder from your older pc here is the link on how to Do it.
+### Easiest method to Copy SSH Keys of One machine to another machine in Linux
+https://readybytes.in/blog/easiest-method-to-copy-ssh-keys-of-one-machine-to-another-machine-in-linux
