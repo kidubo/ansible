@@ -16,7 +16,10 @@ First You'll need to install Ansible here are the steps
 
  ```
 
- `ansible-playbook -t node ansible.yaml`  This is installing by tags\n
+ `ansible-playbook -t node ansible.yaml`  This is installing by tags
+ 
+ 
+ 
  `ansible-playbook -t zsh ansible.yaml`  This is installing by tags
  
  You may need to copy the .ssh folder from your older pc here is the link on how to Do it.
